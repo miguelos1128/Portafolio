@@ -4,125 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Store</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .banner-descuento {
-            background-color: #007bff;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .container {
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-            font-family: 'Impact', sans-serif; /* Changed font family to Impact */
-        }
-        .product {
-            display: inline-block;
-            width: 200px;
-            margin: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .product p {
-            font-size: 14px;
-            color: #555;
-            min-height:120px; /* Altura mínima para las descripciones */
-            margin: 10px 0;
-        }
-        .product img {
-            
-            width: 150px; /* Ancho fijo */
-            height: 150px; /* Alto fijo */
-            object-fit: cover; /* Asegura que la imagen se ajuste dentro del tamaño sin distorsión */
-            border-radius: 10px; /* Opcional, redondea los bordes de la imagen */
-            transition: transform 0.3s ease; /* Added transition effect */
-        }
-        .product img:hover {
-            transform: scale(1.1); /* Increased image size on hover */
-        }
-        .product button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .product button:hover {
-            background-color: #0069d9;
-        }
-    </style>
+    
 </head>
 <body>
-
-    <div class="container">
-        <h1>Fashion Store</h1>
-
-        <div class="banner-descuento">
-            <p>¡10% de descuento por fin de temporada en toda la tienda! ¡Compra ahora y disfruta de los precios más bajos!</p>
-        </div>
-
-        <div class="product">
-            <img src="https://i.imgur.com/iTLFqXI.jpeg" alt="Producto 1">
-            <h2>Bicicleta</h2>
-            <p>Descubre la comodidad y estilo de nuestros tenis. Perfectos para cualquier ocasión, te ofrecen el soporte ideal y un diseño moderno que te hará destacar.</p>
-            <button onclick="comprarProducto('Producto 1')">Comprar ahora</button>
-        </div>
-        <div class="product">
-            <img src="https://i.imgur.com/UJKH2kl.jpeg" alt="Producto 2">
-            <h2>Smartphone</h2>
-            <p>Nuestra mochila versátil es ideal para llevar todo lo que necesitas, ya sea para el trabajo, la escuela o una aventura. Con amplio espacio y un diseño resistente, es tu compañera perfecta.</p>
-            <button onclick="comprarProducto('Producto 2')">Comprar ahora</button>
-        </div>
-        <div class="product">
-            <img src="https://i.imgur.com/sJoXWek.jpeg" alt="Producto 3">
-            <h2>Computadora </h2>
-            <p>Rendimiento y potencia en tus manos. Esta computadora está diseñada para cumplir con todas tus tareas diarias, desde trabajo hasta entretenimiento, con velocidad y eficiencia.</p>
-            <button onclick="comprarProducto('Producto 3')">Comprar ahora</button>
-        </div>
-        <div class="product">
-            <img src="https://i.imgur.com/QSkafAe.jpeg" alt="Producto 4">
-            <h2>Mochila</h2>
-            <p>Explora el mundo sobre ruedas con nuestra bicicleta ligera y resistente. Ideal para paseos urbanos o rutas más exigentes, disfruta de la libertad y el aire libre.</p>
-            <button onclick="comprarProducto('Producto 4')">Comprar ahora</button>
-        </div>
-        <div class="product">
-            <img src="https://i.imgur.com/uTatSxV.jpeg" alt="Producto 5">
-            <h2>Tenis</h2>
-            <p>Lleva la tecnología de última generación en tu bolsillo. Con una cámara espectacular, rendimiento rápido y diseño elegante, este smartphone te mantendrá conectado con estilo.</p>
-            <button onclick="comprarProducto('Producto 3')">Comprar ahora</button>
-        </div>
-    </div>
-
-    <script>
-        // Función que genera el enlace de WhatsApp dinámicamente
-        function generarEnlaceWhatsApp(producto) {
-            var numeroWhatsApp = "7122358867"; // Cambia este número por el tuyo
-            var mensaje = `Hola, estoy interesado en el  ${producto} podrias darme más información ¡Por favor!`;
-            var mensajeCodificado = encodeURIComponent(mensaje); // Codificar el mensaje para la URL
-            var enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
-            return enlaceWhatsApp;
-        }
-
-        // Función que redirige al enlace de WhatsApp con el producto correcto
-        function comprarProducto(producto) {
-            var enlace = generarEnlaceWhatsApp(producto);
-            window.location.href = enlace;
-        }
-    </script>
+    <head>
+        <h1>Mi portafolio de Proyectos</h1>
+    </head>
+   
+   
 </body>
 </html>
