@@ -1,0 +1,99 @@
+/*Declarar variable globales*/
+:root{
+    --primary: #232322;
+    --white: #fefefe;
+    --gray: #888a8f;
+}
+/*Restablecer los valors de los elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    background-color: var(--primary);
+    height: 100vh;
+}
+.nav {
+    border-bottom: 1px solid var(--gray);
+}
+/* ocultar el checbox*/
+.nav_checkbox {
+    display: none;
+}
+.nav_toggle { 
+    position: absolute;/*cambiar pocisión*/
+    cursor: pointer;
+    margin: 01rem;
+    right: 0;
+}
+/*Cambiar tamaño y color*/
+.nav_toggle svg{
+    width: 1rem;
+    fill: var(--white)
+}
+.nav_toggle .close {
+    display: none;
+}
+.nav_toggle .close,
+.nave_toggle .menu { 
+    margin-top: 0.3rem;
+}
+
+/*cambiar pocicion de la lista*/
+.nav_menu { 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+}
+/*Eliminar los * de la lista*/
+.nav_menu li {
+    display: none;
+    list-style-type: none;
+}
+/*Afectar el primer item de la liste el LOGO*/
+.nav_menu li:first-child{
+    display: block;
+    margin-right: auto;
+}
+.nav_menu a {
+    color:inherit;
+    text-decoration: none;
+    font-size: 1.1rem;
+
+}
+.menu_logo {
+    height: 30px;
+}
+.menu_logo img {
+    height: 100%;
+}
+/* Incluir la interacción del menú con el checkbox*/
+
+#nav_checkbox:checked ~ ul.nav_menu li {
+    display: block;
+}
+#nav_checkbox:checked ~ label.nav_toggle .close {
+    display: block;
+}
+#nav_checkbox:checked ~ label.nav_toggle .menu {
+    display: none;
+}   
+/*Definir las media queries para que el menú sea responsivo*/
+@media only screen and (min-width: 780px){
+    .nav_toggle { 
+        display: none;
+    }
+    .nav_menu { 
+        flex-direction: row;
+    }
+    .nav_menu li{
+        display: block;
+    }
+}
